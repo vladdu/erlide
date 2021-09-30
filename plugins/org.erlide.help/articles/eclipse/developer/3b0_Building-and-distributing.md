@@ -17,7 +17,7 @@ There are three update sites:
 
 ## Building Erlide
 
-Building is done using [Buckminster](http://eclipse.org/buckminster).
+Building is done using [Buckminster](https://eclipse.org/buckminster).
 This has the great advantage that the build is done inside a regular
 Eclipse workspace, with the regular builders for that project, and we
 don’t have to bother to add custom build scripts for Erlang code (that
@@ -35,7 +35,7 @@ in your home directory. (JRuby is used because it had seamless integration with 
 For building the update site from inside Eclipse, right-click on the
 `org.erlide.site` project and choose `Buckminster&rarr;Invoke action`. In the
 dialog, specify org.erlide.site/buckminster.properties as properties
-file and select `site.p2` as action. 
+file and select `site.p2` as action.
 
 ### Build target
 
@@ -45,8 +45,8 @@ that it can be reused.
 
 ### Automatic builds
 
-We have a [Jenkins](http://jenkins-ci.org) server set up to do automatic
-builds, at `http://ci.erlide.org`. Here we will run automated tests and
+We have a [Jenkins](https://jenkins-ci.org) server set up to do automatic
+builds, at `https://ci.erlide.org`. Here we will run automated tests and
 stable releases can be published to the official update sites from here
 too.
 
@@ -65,5 +65,4 @@ build tasks.
     builds
 -   **publish\_product**: puts together an Eclipse-based erlide product
     and publishes it. Only from `master` and is manually started after
-    acceptance tests. 
-
+    acceptance tests.

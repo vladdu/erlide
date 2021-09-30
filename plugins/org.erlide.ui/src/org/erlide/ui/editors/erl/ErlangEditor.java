@@ -428,7 +428,7 @@ public class ErlangEditor extends AbstractErlangEditor
         }
 
         final int anchor = getBracketMatcher().getAnchor();
-        // http://dev.eclipse.org/bugs/show_bug.cgi?id=34195
+        // https://dev.eclipse.org/bugs/show_bug.cgi?id=34195
         int targetOffset = ICharacterPairMatcher.RIGHT == anchor ? offset + 1
                 : offset + length;
 
@@ -438,7 +438,7 @@ public class ErlangEditor extends AbstractErlangEditor
             visible = extension.modelOffset2WidgetOffset(targetOffset) > -1;
         } else {
             final IRegion visibleRegion = sourceViewer.getVisibleRegion();
-            // http://dev.eclipse.org/bugs/show_bug.cgi?id=34195
+            // https://dev.eclipse.org/bugs/show_bug.cgi?id=34195
             visible = targetOffset >= visibleRegion.getOffset()
                     && targetOffset <= visibleRegion.getOffset()
                             + visibleRegion.getLength();

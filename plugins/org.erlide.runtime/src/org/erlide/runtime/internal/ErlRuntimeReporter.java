@@ -47,7 +47,7 @@ public class ErlRuntimeReporter {
                     + "_<timestamp>.txt' has been created in your home directory, "
                     + "please consider reporting the problem. \n"
                     + (SystemConfiguration.hasFeatureEnabled("erlide.ericsson.user") ? ""
-                            : "http://github.com/erlang/erlide_eclipse/issues");
+                            : "https://github.com/erlang/erlide_eclipse/issues");
             MessageReporter.showError(msg, msg1 + "\n\n" + details);
         }
         return msg;

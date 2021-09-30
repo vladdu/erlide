@@ -13,9 +13,9 @@ part: Getting started
 4. Select the Installed Software tab. If "Erlang IDE" appears under name, then go to 17.
 5. Select the Available Software tab.
 6. Click the `Add Site...` button on the right.
-7. In the Location field, enter `http://erlide.org/update`
+7. In the Location field, enter `https://erlide.org/update`
 8. Click OK
-9. Check the box left of http://erlide.org/update
+9. Check the box left of https://erlide.org/update
 10. Check the box left of Unstable builds
 11. Click the `Install...` button on the right
 12. When the Install dialog pops, click on the Next button

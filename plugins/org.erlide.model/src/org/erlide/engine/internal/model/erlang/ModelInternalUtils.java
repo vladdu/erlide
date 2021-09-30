@@ -277,7 +277,7 @@ public class ModelInternalUtils implements ModelUtilService {
         // lookup - inside the container
         if (path.getDevice() == null) { // container relative paths should not
             // contain a device
-            // (see http://dev.eclipse.org/bugs/show_bug.cgi?id=18684)
+            // (see https://dev.eclipse.org/bugs/show_bug.cgi?id=18684)
             // (case of a workspace rooted at d:\ )
             final IResource resource = container.findMember(path);
             if (resource != null) {
@@ -289,7 +289,7 @@ public class ModelInternalUtils implements ModelUtilService {
         }
 
         // if path is relative, it cannot be an external path
-        // (see http://dev.eclipse.org/bugs/show_bug.cgi?id=22517)
+        // (see https://dev.eclipse.org/bugs/show_bug.cgi?id=22517)
         if (!path.isAbsolute()) {
             return null;
         }

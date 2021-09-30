@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <introContent>
-	<extensionContent id="org.erlide" style="css/overview.css"  
+	<extensionContent id="org.erlide" style="css/overview.css"
 		name="Erlang development tools" path="overview/@">
 		<group id="content-group" style-id="content-group">
 			<link style-id="content-link" label="Erlang development"
-				url="http://org.eclipse.ui.intro/showHelpTopic?id=/org.erlide.help/html/gettingStarted.html" id="erlideabout">
+				url="https://org.eclipse.ui.intro/showHelpTopic?id=/org.erlide.help/html/gettingStarted.html" id="erlideabout">
 				<text>Get familiar with developing Erlang programs using Eclipse</text>
 			</link>
 		</group>

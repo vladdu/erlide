@@ -172,7 +172,7 @@ public class ContentAssistTest {
                 ICompletionProposal::getDisplayString)).isEqualTo(expected);
     }
 
-    // http://www.assembla.com/spaces/erlide/tickets/947
+    // https://www.assembla.com/spaces/erlide/tickets/947
     // completion of include and include_lib
     @Test
     public void includeCompletionTest() throws Exception {

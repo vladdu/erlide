@@ -5,7 +5,7 @@ Bundle-SymbolicName: org.erlide.wrangler.refactoring.codeinspection;singleton:=t
 Bundle-Version: 0.11.0.qualifier
 Bundle-Vendor: UKC
 Fragment-Host: org.erlide.wrangler.refactoring;bundle-version="0.10.0"
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Require-Bundle: org.eclipse.ui,
  com.google.guava;bundle-version="[21.0.0,28.0.0)",
  javax.inject;bundle-version="1.0.0",

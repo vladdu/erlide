@@ -134,7 +134,7 @@ public class DialyzerUtilsTest {
 
     @Test
     public void dialyzeWithExternalInclude() throws Exception {
-        // http://www.assembla.com/spaces/erlide/tickets/608-dialyzer---navigate-to-external-includes-from-markers
+        // https://www.assembla.com/spaces/erlide/tickets/608-dialyzer---navigate-to-external-includes-from-markers
         File externalFile = null;
         IErlProject erlProject = null;
         File externalIncludesFile = null;
@@ -200,7 +200,7 @@ public class DialyzerUtilsTest {
 
     public void dialyzePrepareFromSelection(final boolean sources, final SEL select)
             throws Exception {
-        // http://www.assembla.com/spaces/erlide/tickets/607-dialyzer---only-dialyze-on-selection
+        // https://www.assembla.com/spaces/erlide/tickets/607-dialyzer---only-dialyze-on-selection
         IErlProject erlProject = null;
         try {
             // given
@@ -316,7 +316,7 @@ public class DialyzerUtilsTest {
 
     @Test
     public void dialyzeBinaryOnProjectWithErrorFile() throws Exception {
-        // http://www.assembla.com/spaces/erlide/tickets/616-dialyzer-�-crash-on-binary-analysis-and-files-with-errors
+        // https://www.assembla.com/spaces/erlide/tickets/616-dialyzer-�-crash-on-binary-analysis-and-files-with-errors
         IErlProject erlProject = null;
         try {
             // given

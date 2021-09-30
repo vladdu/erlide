@@ -18,7 +18,7 @@ ${exported_functions}
 
 %% start/2
 %% ====================================================================
-%% @doc &lt;a href=&quot;http://www.erlang.org/doc/apps/kernel/application.html#Module:start-2&quot;&gt;application:start/2&lt;/a&gt;
+%% @doc &lt;a href=&quot;https://www.erlang.org/doc/apps/kernel/application.html#Module:start-2&quot;&gt;application:start/2&lt;/a&gt;
 -spec start(Type :: normal | {takeover, Node} | {failover, Node}, Args :: term()) -&gt;
 	{ok, Pid :: pid()}
 	| {ok, Pid :: pid(), State :: term()}
@@ -34,7 +34,7 @@ start(Type, StartArgs) -&gt;
 
 %% stop/1
 %% ====================================================================
-%% @doc &lt;a href=&quot;http://www.erlang.org/doc/apps/kernel/application.html#Module:stop-1&quot;&gt;application:stop/1&lt;/a&gt;
+%% @doc &lt;a href=&quot;https://www.erlang.org/doc/apps/kernel/application.html#Module:stop-1&quot;&gt;application:stop/1&lt;/a&gt;
 -spec stop(State :: term()) -&gt;  Any :: term().
 %% ====================================================================
 stop(State) -&gt;
@@ -78,7 +78,7 @@ ${exported_functions}
 
 %% init/1
 %% ====================================================================
-%% @doc &lt;a href=&quot;http://www.erlang.org/doc/man/gen_event.html#Module:init-1&quot;&gt;gen_event:init/1&lt;/a&gt;
+%% @doc &lt;a href=&quot;https://www.erlang.org/doc/man/gen_event.html#Module:init-1&quot;&gt;gen_event:init/1&lt;/a&gt;
 -spec init(InitArgs) -&gt; Result when
 	InitArgs :: Args | {Args, Term :: term()},
 	Args :: term(),
@@ -93,7 +93,7 @@ init([]) -&gt;
 
 %% handle_event/2
 %% ====================================================================
-%% @doc &lt;a href=&quot;http://www.erlang.org/doc/man/gen_event.html#Module:handle_event-2&quot;&gt;gen_event:handle_event/2&lt;/a&gt;
+%% @doc &lt;a href=&quot;https://www.erlang.org/doc/man/gen_event.html#Module:handle_event-2&quot;&gt;gen_event:handle_event/2&lt;/a&gt;
 -spec handle_event(Event :: term(), State :: term()) -&gt; Result when
 	Result :: {ok, NewState}
 			| {ok, NewState, hibernate}
@@ -109,7 +109,7 @@ handle_event(Event, State) -&gt;
 
 %% handle_call/2
 %% ====================================================================
-%% @doc &lt;a href=&quot;http://www.erlang.org/doc/man/gen_event.html#Module:handle_call-2&quot;&gt;gen_event:handle_call/2&lt;/a&gt;
+%% @doc &lt;a href=&quot;https://www.erlang.org/doc/man/gen_event.html#Module:handle_call-2&quot;&gt;gen_event:handle_call/2&lt;/a&gt;
 -spec handle_call(Request :: term(), State :: term()) -&gt; Result when
 	Result :: {ok, Reply, NewState}
 			| {ok, Reply, NewState, hibernate}
@@ -127,7 +127,7 @@ handle_call(Request, State) -&gt;
 
 %% handle_info/2
 %% ====================================================================
-%% @doc &lt;a href=&quot;http://www.erlang.org/doc/man/gen_event.html#Module:handle_info-2&quot;&gt;gen_event:handle_info/2&lt;/a&gt;
+%% @doc &lt;a href=&quot;https://www.erlang.org/doc/man/gen_event.html#Module:handle_info-2&quot;&gt;gen_event:handle_info/2&lt;/a&gt;
 -spec handle_info(Info :: term(), State :: term()) -&gt; Result when
 	Result :: {ok, NewState}
 			| {ok, NewState, hibernate}
@@ -143,7 +143,7 @@ handle_info(Info, State) -&gt;
 
 %% terminate/2
 %% ====================================================================
-%% @doc &lt;a href=&quot;http://www.erlang.org/doc/man/gen_event.html#Module:terminate-2&quot;&gt;gen_event:terminate/2&lt;/a&gt;
+%% @doc &lt;a href=&quot;https://www.erlang.org/doc/man/gen_event.html#Module:terminate-2&quot;&gt;gen_event:terminate/2&lt;/a&gt;
 -spec terminate(Arg, State :: term()) -&gt; term() when
 	Arg :: Args
 		| {stop, Reason}
@@ -159,7 +159,7 @@ terminate(Arg, State) -&gt;
 
 %% code_change/3
 %% ====================================================================
-%% @doc &lt;a href=&quot;http://www.erlang.org/doc/man/gen_event.html#Module:code_change-3&quot;&gt;gen_event:code_change/3&lt;/a&gt;
+%% @doc &lt;a href=&quot;https://www.erlang.org/doc/man/gen_event.html#Module:code_change-3&quot;&gt;gen_event:code_change/3&lt;/a&gt;
 -spec code_change(OldVsn, State :: term(), Extra :: term()) -&gt; {ok, NewState :: term()} when
 	OldVsn :: Vsn | {down, Vsn},
 	Vsn :: term().
@@ -193,7 +193,7 @@ ${exported_functions}
 
 %% init/1
 %% ====================================================================
-%% @doc &lt;a href=&quot;http://www.erlang.org/doc/man/gen_fsm.html#Module:init-1&quot;&gt;gen_fsm:init/1&lt;/a&gt;
+%% @doc &lt;a href=&quot;https://www.erlang.org/doc/man/gen_fsm.html#Module:init-1&quot;&gt;gen_fsm:init/1&lt;/a&gt;
 -spec init(Args :: term()) -&gt; Result when
 	Result :: {ok, StateName, StateData}
 			| {ok, StateName, StateData, Timeout}
@@ -211,7 +211,7 @@ init([]) -&gt;
 
 %% state_name/2
 %% ====================================================================
-%% @doc &lt;a href=&quot;http://www.erlang.org/doc/man/gen_fsm.html#Module:StateName-2&quot;&gt;gen_fsm:StateName/2&lt;/a&gt;
+%% @doc &lt;a href=&quot;https://www.erlang.org/doc/man/gen_fsm.html#Module:StateName-2&quot;&gt;gen_fsm:StateName/2&lt;/a&gt;
 -spec state_name(Event :: timeout | term(), StateData :: term()) -&gt; Result when
 	Result :: {next_state, NextStateName, NewStateData}
 			| {next_state, NextStateName, NewStateData, Timeout}
@@ -229,7 +229,7 @@ state_name(Event, StateData) -&gt;
 
 %% state_name/3
 %% ====================================================================
-%% @doc &lt;a href=&quot;http://www.erlang.org/doc/man/gen_fsm.html#Module:StateName-3&quot;&gt;gen_fsm:StateName/3&lt;/a&gt;
+%% @doc &lt;a href=&quot;https://www.erlang.org/doc/man/gen_fsm.html#Module:StateName-3&quot;&gt;gen_fsm:StateName/3&lt;/a&gt;
 -spec state_name(Event :: term(), From :: {pid(), Tag :: term()}, StateData :: term()) -&gt; Result when
 	Result :: {reply, Reply, NextStateName, NewStateData}
 			| {reply, Reply, NextStateName, NewStateData, Timeout}
@@ -252,7 +252,7 @@ state_name(Event, From, StateData) -&gt;
 
 %% handle_event/3
 %% ====================================================================
-%% @doc &lt;a href=&quot;http://www.erlang.org/doc/man/gen_fsm.html#Module:handle_event-3&quot;&gt;gen_fsm:handle_event/3&lt;/a&gt;
+%% @doc &lt;a href=&quot;https://www.erlang.org/doc/man/gen_fsm.html#Module:handle_event-3&quot;&gt;gen_fsm:handle_event/3&lt;/a&gt;
 -spec handle_event(Event :: term(), StateName :: atom(), StateData :: term()) -&gt; Result when
 	Result :: {next_state, NextStateName, NewStateData}
 			| {next_state, NextStateName, NewStateData, Timeout}
@@ -269,7 +269,7 @@ handle_event(Event, StateName, StateData) -&gt;
 
 %% handle_sync_event/4
 %% ====================================================================
-%% @doc &lt;a href=&quot;http://www.erlang.org/doc/man/gen_fsm.html#Module:handle_sync_event-4&quot;&gt;gen_fsm:handle_sync_event/4&lt;/a&gt;
+%% @doc &lt;a href=&quot;https://www.erlang.org/doc/man/gen_fsm.html#Module:handle_sync_event-4&quot;&gt;gen_fsm:handle_sync_event/4&lt;/a&gt;
 -spec handle_sync_event(Event :: term(), From :: {pid(), Tag :: term()}, StateName :: atom(), StateData :: term()) -&gt; Result when
 	Result :: {reply, Reply, NextStateName, NewStateData}
 			| {reply, Reply, NextStateName, NewStateData, Timeout}
@@ -292,7 +292,7 @@ handle_sync_event(Event, From, StateName, StateData) -&gt;
 
 %% handle_info/3
 %% ====================================================================
-%% @doc &lt;a href=&quot;http://www.erlang.org/doc/man/gen_fsm.html#Module:handle_info-3&quot;&gt;gen_fsm:handle_info/3&lt;/a&gt;
+%% @doc &lt;a href=&quot;https://www.erlang.org/doc/man/gen_fsm.html#Module:handle_info-3&quot;&gt;gen_fsm:handle_info/3&lt;/a&gt;
 -spec handle_info(Info :: term(), StateName :: atom(), StateData :: term()) -&gt; Result when
 	Result :: {next_state, NextStateName, NewStateData}
 			| {next_state, NextStateName, NewStateData, Timeout}
@@ -309,7 +309,7 @@ handle_info(Info, StateName, StateData) -&gt;
 
 %% terminate/3
 %% ====================================================================
-%% @doc &lt;a href=&quot;http://www.erlang.org/doc/man/gen_fsm.html#Module:terminate-3&quot;&gt;gen_fsm:terminate/3&lt;/a&gt;
+%% @doc &lt;a href=&quot;https://www.erlang.org/doc/man/gen_fsm.html#Module:terminate-3&quot;&gt;gen_fsm:terminate/3&lt;/a&gt;
 -spec terminate(Reason, StateName :: atom(), StateData :: term()) -&gt; Result :: term() when
 	Reason :: normal
 			| shutdown
@@ -322,7 +322,7 @@ terminate(Reason, StateName, StatData) -&gt;
 
 %% code_change/4
 %% ====================================================================
-%% @doc &lt;a href=&quot;http://www.erlang.org/doc/man/gen_fsm.html#Module:code_change-4&quot;&gt;gen_fsm:code_change/4&lt;/a&gt;
+%% @doc &lt;a href=&quot;https://www.erlang.org/doc/man/gen_fsm.html#Module:code_change-4&quot;&gt;gen_fsm:code_change/4&lt;/a&gt;
 -spec code_change(OldVsn, StateName :: atom(), StateData :: term(), Extra :: term()) -&gt; {ok, NextStateName :: atom(), NewStateData :: term()} when
 	OldVsn :: Vsn | {down, Vsn},
 	Vsn :: term().
@@ -356,7 +356,7 @@ ${exported_functions}
 
 %% init/1
 %% ====================================================================
-%% @doc &lt;a href=&quot;http://www.erlang.org/doc/man/gen_server.html#Module:init-1&quot;&gt;gen_server:init/1&lt;/a&gt;
+%% @doc &lt;a href=&quot;https://www.erlang.org/doc/man/gen_server.html#Module:init-1&quot;&gt;gen_server:init/1&lt;/a&gt;
 -spec init(Args :: term()) -&gt; Result when
 	Result :: {ok, State}
 			| {ok, State, Timeout}
@@ -372,7 +372,7 @@ init([]) -&gt;
 
 %% handle_call/3
 %% ====================================================================
-%% @doc &lt;a href=&quot;http://www.erlang.org/doc/man/gen_server.html#Module:handle_call-3&quot;&gt;gen_server:handle_call/3&lt;/a&gt;
+%% @doc &lt;a href=&quot;https://www.erlang.org/doc/man/gen_server.html#Module:handle_call-3&quot;&gt;gen_server:handle_call/3&lt;/a&gt;
 -spec handle_call(Request :: term(), From :: {pid(), Tag :: term()}, State :: term()) -&gt; Result when
 	Result :: {reply, Reply, NewState}
 			| {reply, Reply, NewState, Timeout}
@@ -394,7 +394,7 @@ handle_call(Request, From, State) -&gt;
 
 %% handle_cast/2
 %% ====================================================================
-%% @doc &lt;a href=&quot;http://www.erlang.org/doc/man/gen_server.html#Module:handle_cast-2&quot;&gt;gen_server:handle_cast/2&lt;/a&gt;
+%% @doc &lt;a href=&quot;https://www.erlang.org/doc/man/gen_server.html#Module:handle_cast-2&quot;&gt;gen_server:handle_cast/2&lt;/a&gt;
 -spec handle_cast(Request :: term(), State :: term()) -&gt; Result when
 	Result :: {noreply, NewState}
 			| {noreply, NewState, Timeout}
@@ -409,7 +409,7 @@ handle_cast(Msg, State) -&gt;
 
 %% handle_info/2
 %% ====================================================================
-%% @doc &lt;a href=&quot;http://www.erlang.org/doc/man/gen_server.html#Module:handle_info-2&quot;&gt;gen_server:handle_info/2&lt;/a&gt;
+%% @doc &lt;a href=&quot;https://www.erlang.org/doc/man/gen_server.html#Module:handle_info-2&quot;&gt;gen_server:handle_info/2&lt;/a&gt;
 -spec handle_info(Info :: timeout | term(), State :: term()) -&gt; Result when
 	Result :: {noreply, NewState}
 			| {noreply, NewState, Timeout}
@@ -424,7 +424,7 @@ handle_info(Info, State) -&gt;
 
 %% terminate/2
 %% ====================================================================
-%% @doc &lt;a href=&quot;http://www.erlang.org/doc/man/gen_server.html#Module:terminate-2&quot;&gt;gen_server:terminate/2&lt;/a&gt;
+%% @doc &lt;a href=&quot;https://www.erlang.org/doc/man/gen_server.html#Module:terminate-2&quot;&gt;gen_server:terminate/2&lt;/a&gt;
 -spec terminate(Reason, State :: term()) -&gt; Any :: term() when
 	Reason :: normal
 			| shutdown
@@ -437,7 +437,7 @@ terminate(Reason, State) -&gt;
 
 %% code_change/3
 %% ====================================================================
-%% @doc &lt;a href=&quot;http://www.erlang.org/doc/man/gen_server.html#Module:code_change-3&quot;&gt;gen_server:code_change/3&lt;/a&gt;
+%% @doc &lt;a href=&quot;https://www.erlang.org/doc/man/gen_server.html#Module:code_change-3&quot;&gt;gen_server:code_change/3&lt;/a&gt;
 -spec code_change(OldVsn, State :: term(), Extra :: term()) -&gt; Result when
 	Result :: {ok, NewState :: term()} | {error, Reason :: term()},
 	OldVsn :: Vsn | {down, Vsn},
@@ -488,7 +488,7 @@ ${exported_functions}
 
 %% init/1
 %% ====================================================================
-%% @doc &lt;a href=&quot;http://www.erlang.org/doc/man/supervisor_bridge.html#Module:init-1&quot;&gt;supervisor_bridge:init/1&lt;/a&gt;
+%% @doc &lt;a href=&quot;https://www.erlang.org/doc/man/supervisor_bridge.html#Module:init-1&quot;&gt;supervisor_bridge:init/1&lt;/a&gt;
 -spec init(Args :: term()) -&gt; Result :: {ok, Pid :: pid(), State :: term()}
 										| ignore
 										| {error, Error :: term()}.
@@ -503,7 +503,7 @@ init([]) -&gt;
 
 %% terminate/2
 %% ====================================================================
-%% @doc &lt;a href=&quot;http://www.erlang.org/doc/man/supervisor_bridge.html#Module:terminate-2&quot;&gt;supervisor_bridge:termiante/2&lt;/a&gt;
+%% @doc &lt;a href=&quot;https://www.erlang.org/doc/man/supervisor_bridge.html#Module:terminate-2&quot;&gt;supervisor_bridge:termiante/2&lt;/a&gt;
 -spec terminate(Reason :: shutdown | term(), State :: term()) -&gt; Any :: term().
 %% ====================================================================
 terminate(Reason, State) -&gt;
@@ -534,7 +534,7 @@ ${exported_functions}
 
 %% init/1
 %% ====================================================================
-%% @doc &lt;a href=&quot;http://www.erlang.org/doc/man/supervisor.html#Module:init-1&quot;&gt;supervisor:init/1&lt;/a&gt;
+%% @doc &lt;a href=&quot;https://www.erlang.org/doc/man/supervisor.html#Module:init-1&quot;&gt;supervisor:init/1&lt;/a&gt;
 -spec init(Args :: term()) -&gt; Result when
 	Result :: {ok, {SupervisionPolicy, [ChildSpec]}} | ignore,
 	SupervisionPolicy :: {RestartStrategy, MaxR :: non_neg_integer(), MaxT :: pos_integer()},

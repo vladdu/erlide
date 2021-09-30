@@ -56,7 +56,8 @@ public final class Base64 {
             allBits = 0;
             // Loop 4 times gathering input bits (4 * 6 = 24)
             for (int j = 0; j < 4; j++) {
-                allBits = allBits << 6 | Base64.decodeDigit(data[dataIndex++]);
+                allBits = allBits << 6 | Base64.decodeDigit(data[dataIndex]);
+                dataIndex++;
             }
             // Loop 3 times generating output bits (3 * 8 = 24)
             for (int j = resultIndex + 2; j >= resultIndex; j--) {
@@ -74,7 +75,8 @@ public final class Base64 {
             allBits = 0;
             // Loop 3 times gathering input bits
             for (int j = 0; j < 3; j++) {
-                allBits = allBits << 6 | Base64.decodeDigit(data[dataIndex++]);
+                allBits = allBits << 6 | Base64.decodeDigit(data[dataIndex]);
+                dataIndex++;
             }
             // NOTE - The code below ends up being equivalent to allBits =
             // allBits>>>2
@@ -96,7 +98,8 @@ public final class Base64 {
             allBits = 0;
             // Loop 2 times gathering input bits
             for (int j = 0; j < 2; j++) {
-                allBits = allBits << 6 | Base64.decodeDigit(data[dataIndex++]);
+                allBits = allBits << 6 | Base64.decodeDigit(data[dataIndex]);
+                dataIndex++;
             }
             // NOTE - The code below ends up being equivalent to allBits =
             // allBits>>>4
@@ -163,7 +166,8 @@ public final class Base64 {
             allBits = 0;
             // Loop 3 times gathering input bits (3 * 8 = 24)
             for (int j = 0; j < 3; j++) {
-                allBits = allBits << 8 | data[dataIndex++] & 0xff;
+                allBits = allBits << 8 | data[dataIndex] & 0xff;
+                dataIndex++;
             }
             // Loop 4 times generating output bits (4 * 6 = 24)
             for (int j = resultIndex + 3; j >= resultIndex; j--) {
@@ -177,7 +181,8 @@ public final class Base64 {
         // Now we do the extra bytes in case the original (non-encoded) data
         // is not multiple of 4 bytes
         if (extraBytes == 1) {
-            allBits = data[dataIndex++]; // actual byte
+            allBits = data[dataIndex]; // actual byte
+            dataIndex++;
             allBits = allBits << 8; // 8 bits of zeroes
             allBits = allBits << 8; // 8 bits of zeroes
             // Loop 4 times generating output bits (4 * 6 = 24)
@@ -191,7 +196,8 @@ public final class Base64 {
             result[result.length - 1] = (byte) '=';
             result[result.length - 2] = (byte) '=';
         } else if (extraBytes == 2) {
-            allBits = data[dataIndex++]; // actual byte
+            allBits = data[dataIndex]; // actual byte
+            dataIndex++;
             allBits = allBits << 8 | data[dataIndex++] & 0xff; // actual
             // byte
             allBits = allBits << 8; // 8 bits of zeroes

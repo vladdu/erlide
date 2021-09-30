@@ -126,7 +126,7 @@ public class ErlProjectTest {
 
     @Test
     public void findIncludeFileOnIncludePathInOtherProject() throws Exception {
-        // http://www.assembla.com/spaces/erlide/tickets/756-navigation--external-include-files-are-not-found
+        // https://www.assembla.com/spaces/erlide/tickets/756-navigation--external-include-files-are-not-found
         IErlModule externalInclude = null;
         IErlProject project = null;
         IErlProject project2 = null;

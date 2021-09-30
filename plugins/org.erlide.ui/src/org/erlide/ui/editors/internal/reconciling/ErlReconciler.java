@@ -402,7 +402,7 @@ public class ErlReconciler implements IReconciler {
             fListener = null;
 
             synchronized (this) {
-                // http://dev.eclipse.org/bugs/show_bug.cgi?id=19135
+                // https://dev.eclipse.org/bugs/show_bug.cgi?id=19135
                 final ReconcilerThread bt = fThread;
                 fThread = null;
                 bt.cancel();

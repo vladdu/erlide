@@ -30,7 +30,7 @@ import org.erlide.ui.editors.erl.actions.IErlangEditorActionDefinitionIds;
 public class ErlEditorActionBarContributor extends BasicTextEditorActionContributor {
 
     public ErlEditorActionBarContributor() {
-        
+
 
         // contentAssistProposal = new RetargetTextEditorAction(ErlideUIMessages
         // .getResourceBundle(), "ContentAssistProposal.");

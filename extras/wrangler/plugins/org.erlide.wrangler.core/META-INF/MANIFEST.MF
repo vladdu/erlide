@@ -5,6 +5,6 @@ Bundle-SymbolicName: org.erlide.wrangler.core;singleton:=true
 Bundle-Version: 0.11.0.qualifier
 Bundle-Vendor: UKC
 Require-Bundle: org.erlide.core;bundle-version="0.32.0"
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Import-Package: org.eclipse.jdt.annotation;resolution:=optional
 Automatic-Module-Name: org.erlide.wrangler.core

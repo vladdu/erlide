@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
-  xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"
+  xmlns="https://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.erlide</groupId>
   <artifactId>org.erlide.parent</artifactId>
-  <version>0.60.4-SNAPSHOT</version>
+  <version>0.61.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <properties>
-    <tycho.version>1.7.0</tycho.version>
+    <java.version>11</java.version>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+    <maven.compiler.reelase>11</maven.compiler.reelase>
+
+    <tycho.version>2.3.0</tycho.version>
     <tycho-extras-version>${tycho.version}</tycho-extras-version>
     <maven-antrun-plugin.version>1.7</maven-antrun-plugin.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -25,8 +30,6 @@
     <current-release-directory>${releases-directory}/${qualifiedVersion}</current-release-directory>
     <!-- The label for the Composite sites -->
     <site.label>Erlide Composite Site</site.label>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
   <repositories>
@@ -38,7 +41,7 @@
     <repository>
       <id>neon updates</id>
       <layout>p2</layout>
-      <url>http://download.eclipse.org/eclipse/updates/4.9/</url>
+      <url>https://download.eclipse.org/eclipse/updates/4.9/</url>
     </repository>
     <repository>
       <id>erlide libs</id>
@@ -48,12 +51,12 @@
     <repository>
       <id>orbit neon</id>
       <layout>p2</layout>
-      <url>http://download.eclipse.org/tools/orbit/R-builds/R20170307180635/repository</url>
+      <url>https://download.eclipse.org/tools/orbit/R-builds/R20170307180635/repository</url>
     </repository>
     <repository>
       <id>xtend</id>
       <layout>p2</layout>
-      <url>http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.19.0</url>
+      <url>https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.19.0</url>
     </repository>
     <repository>
       <id>kernel</id>
@@ -211,10 +214,10 @@
             <configuration>
               <rules>
                 <requireMavenVersion>
-                  <version>3.6.3</version>
+                  <version>3.8.2</version>
                 </requireMavenVersion>
                 <requireJavaVersion>
-                  <version>1.8</version>
+                  <version>11</version>
                 </requireJavaVersion>
               </rules>
             </configuration>
@@ -240,11 +243,12 @@
           <artifactId>target-platform-configuration</artifactId>
           <version>${tycho.version}</version>
           <configuration>
+            <executionEnvironment>JavaSE-11</executionEnvironment>
             <target>
               <artifact>
                 <groupId>org.erlide</groupId>
                 <artifactId>org.erlide.target</artifactId>
-                <version>0.60.4-SNAPSHOT</version>
+                <version>0.61.0-SNAPSHOT</version>
               </artifact>
             </target>
             <environments>
@@ -297,7 +301,6 @@
             <useProjectSettings>true</useProjectSettings>
             <strictCompilerTarget>true</strictCompilerTarget>
             <compilerArgs>
-              <arg>-1.8</arg>
             </compilerArgs>
           </configuration>
           <dependencies>
@@ -375,7 +378,7 @@
                       build-helper-maven-plugin
                     </artifactId>
                     <versionRange>
-                      [1.8,)
+                      [11,)
                     </versionRange>
                     <goals>
                       <goal>add-source</goal>

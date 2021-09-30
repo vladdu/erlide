@@ -507,7 +507,7 @@ public class DefaultErlangFoldingStructureProvider implements IProjectionListene
      */
     @Override
     public void projectionEnabled() {
-        // http://home.ott.oti.com/teams/wswb/anon/out/vms/index.html
+        // https://home.ott.oti.com/teams/wswb/anon/out/vms/index.html
         // projectionEnabled messages are not always paired with
         // projectionDisabled
         // i.e. multiple enabled messages may be sent out.

@@ -73,7 +73,7 @@
 				</fileset>
 			</classpath>
 			<arg line='-data "${director.dir}/workspace"' />
-			<arg line="-r http://download.eclipse.org/tools/buckminster/headless-3.6,http://download.eclipse.org/releases/helios/" />
+			<arg line="-r https://download.eclipse.org/tools/buckminster/headless-3.6,https://download.eclipse.org/releases/helios/" />
 			<arg line='-d "${buckminster-headless.dir}"' />
 			<arg line="-p Buckminster" />
 			<arg line="-i org.eclipse.buckminster.cmdline.product" />

@@ -896,7 +896,7 @@ public abstract class AbstractConnection extends Thread {
             } else if (i == 0 && len != 0) {
                 /*
                  * This is a corner case. According to
-                 * http://java.sun.com/j2se/1.4.2/docs/api/ class InputStream is.read(,,l)
+                 * https://java.sun.com/j2se/1.4.2/docs/api/ class InputStream is.read(,,l)
                  * can only return 0 if l==0. In other words it should not happen, but
                  * apparently did.
                  */

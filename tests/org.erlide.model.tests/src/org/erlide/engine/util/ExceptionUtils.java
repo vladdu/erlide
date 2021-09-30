@@ -1,6 +1,6 @@
 /**
  * Original code from:
- * http://www.dzone.com/links/r/some_junit_tricks_for_easier_and_better_test_cases.html
+ * https://www.dzone.com/links/r/some_junit_tricks_for_easier_and_better_test_cases.html
  */
 package org.erlide.engine.util;
 

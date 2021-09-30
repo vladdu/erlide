@@ -138,11 +138,10 @@ public abstract class ErlElement extends PlatformObject
                 return element;
             }
             final IParent parent = element.getParent();
-            if (parent instanceof IErlElement) {
-                element = (IErlElement) parent;
-            } else {
+            if (!(parent instanceof IErlElement)) {
                 break;
             }
+            element = (IErlElement) parent;
         }
         return null;
     }
@@ -322,7 +321,8 @@ public abstract class ErlElement extends PlatformObject
                 for (final IErlElement element : getChildren()) {
                     ((ErlElement) element).toString(tab + 1, buffer);
                     buffer.append(","); //$NON-NLS-1$
-                    if (++i > 3) {
+                    i++;
+                    if (i > 3) {
                         buffer.append("...");
                         break;
                     }

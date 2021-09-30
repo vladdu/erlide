@@ -18,5 +18,5 @@
    <bundle id="org.eclipse.xtext.xbase.lib"/>
    <category-def name="erlide" label="erlide - Erlang development tools"/>
    <category-def name="extras" label="erlide - optional plugins"/>
-   <repository-reference location="http://download.eclipse.org/tools/orbit/downloads/drops/R20160221192158/repository/" enabled="true" />
+   <repository-reference location="https://download.eclipse.org/tools/orbit/downloads/drops/R20160221192158/repository/" enabled="true" />
 </site>

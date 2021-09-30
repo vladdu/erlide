@@ -14,15 +14,15 @@
 
 IEclipsePreferences#org-erlide-ui {
    preferences:
-        'editor_colors_default_color = #0072bc' 
+        'editor_colors_default_color = #0072bc'
         'editor_colors_default_style = 0'
-        'editor_colors_keyword_color = #ff8d43' 
+        'editor_colors_keyword_color = #ff8d43'
         'editor_colors_keyword_style = 1'
-        'editor_colors_atom_color = #4a4543' 
+        'editor_colors_atom_color = #4a4543'
         'editor_colors_atom_style = 0'
         'editor_colors_macro_color = #bb7334'
         'editor_colors_macro_style = 0'
-        'editor_colors_arrow_color = #0072bc' 
+        'editor_colors_arrow_color = #0072bc'
         'editor_colors_arrow_style = 1'
         'editor_colors_char_color = #579b57'
         'editor_colors_char_style = 0'

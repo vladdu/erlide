@@ -18,8 +18,8 @@ public final class PreferenceNames {
 
     /**
      * net tick time
-     * (<a href="http://www.erlang.org/doc/man/net_kernel.html#set_net_ticktime-1">
-     * http://www.erlang.org/doc/man/net_kernel.html#set_net_ticktime-1</a>)
+     * (<a href="https://www.erlang.org/doc/man/net_kernel.html#set_net_ticktime-1">
+     * https://www.erlang.org/doc/man/net_kernel.html#set_net_ticktime-1</a>)
      */
     public static String TICK_TIME = "tickTime";
 

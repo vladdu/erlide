@@ -26,9 +26,9 @@ title: "Tutorial: Hello, world!"
 or Eclipse (Mac) in the eclipse folder
   4. Select Help (menu) -> Software Updates... (a dialog will appear)
   5. Click Add Site...(another dialog will appear)
-  6. Enter http://erlide.erlide.org/update into the Location field, then
+  6. Enter https://erlide.erlide.org/update into the Location field, then
 click OK (dialog will close)
-  7. Select the checkbox by `http://erlide.org/update` and click
+  7. Select the checkbox by `https://erlide.org/update` and click
 Install... (another dialog will appear)
   8. Select Next
   9. Select I accept ... radio button and click Finish (a progress dialog will
@@ -100,4 +100,3 @@ else
   11. In the Console type **`hello_world:say_hello().`**
   12. Nifty! It displays `"Hello ErlIDE!"` for us! We can change the code at
 runtime.
-

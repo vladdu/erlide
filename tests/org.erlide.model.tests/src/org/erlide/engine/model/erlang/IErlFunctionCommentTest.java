@@ -9,7 +9,7 @@ import org.junit.Test;
 public class IErlFunctionCommentTest extends ErlModelTestBase {
 
     /**
-     * http://www.assembla.com/spaces/erlide/tickets/891-wrong-function-comment-
+     * https://www.assembla.com/spaces/erlide/tickets/891-wrong-function-comment-
      * in-edoc-view-and-hover
      */
     @Test

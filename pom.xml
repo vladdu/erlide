@@ -16,7 +16,7 @@
     <maven.compiler.target>11</maven.compiler.target>
     <maven.compiler.reelase>11</maven.compiler.reelase>
 
-    <tycho.version>2.3.0</tycho.version>
+    <tycho.version>2.7.1</tycho.version>
     <tycho-extras-version>${tycho.version}</tycho-extras-version>
     <maven-antrun-plugin.version>1.7</maven-antrun-plugin.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
